@@ -1,8 +1,9 @@
 
 header {
     width: 100vw;
-    background-color: white;
+    background: white;
     border: 1px solid #000;
+    height: 4rem;
 
     .container {
         width: 90%;
@@ -10,5 +11,17 @@ header {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        height: 100%;
+        align-items: center;
+
+        nav {
+
+            a {
+                margin-left: 1rem;
+                color: blue;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
     }    
 }
