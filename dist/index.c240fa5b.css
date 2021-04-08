@@ -33,12 +33,26 @@ header .container nav a {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-#about > * {
-  border: 3px solid red;
+  align-items: center;
+  height: 30rem;
 }
 #about .info {
   width: 48%;
+}
+#about .info h2 {
+  color: blue;
+  margin-bottom: 1rem;
+}
+#about .info p {
+  margin-bottom: 1rem;
+}
+#about .info .action {
+  margin-right: 1rem;
+  background: royalblue;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 0.3rem;
 }
 #about .image {
   width: 48%;
