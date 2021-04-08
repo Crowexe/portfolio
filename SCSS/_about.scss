@@ -8,10 +8,6 @@
     align-items: center;
     height: 30rem;
 
-    & > * {
-        border: 3px solid red;
-    }
-
     .info {
         width: 48%;
         h2 {
@@ -21,13 +17,16 @@
         p {
             margin-bottom: 1rem;
         }
-        .action {
-            margin-right: 1rem;
-            background: royalblue;
-            color: #fff;
-            padding: .3rem .6rem;
-            border:none;
-            border-radius: 0.3rem;
+        .actions {
+            button {
+                margin-right: 1rem;
+                background: royalblue;
+                color: #fff;
+                padding: .3rem .6rem;
+                border:none;
+                border-radius: 0.3rem;
+            }
+            
         }
 
     }
