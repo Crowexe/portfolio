@@ -22,8 +22,8 @@ body {
     background-color: #202020;
 }
 
-#top {
-  color: #fff;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#top.text {
+    color: #fff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
