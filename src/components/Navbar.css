@@ -11,6 +11,41 @@ ul {
     z-index: 500;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #242424;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 600;
+    z-index: 500;
+}
+
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 600;
+    z-index: 500;
+}
+
+.menu-mobile button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 600;
+    z-index: 500; 
+}
+
 .navbar-list{
     display: flex;
     gap: 1rem; /* Esta propiedad equivale a space-x en Tailwind */
@@ -40,3 +75,62 @@ ul {
     color: #ff6363 !important;
     text-decoration: underline;
 }
+
+.hamburguesa {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 600;
+    z-index: 500;
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .hamburguesa span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: all 0.25s ease-out;
+  }
+  
+  .hamburguesa span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .hamburguesa span:nth-child(2),
+  .hamburguesa span:nth-child(3) {
+    top: 9px;
+  }
+  
+  .hamburguesa span:nth-child(4) {
+    top: 18px;
+  }
+  
+  .hamburguesa.abrir span:nth-child(1) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .hamburguesa.abrir span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .hamburguesa.abrir span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburguesa.abrir span:nth-child(4) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+  }
