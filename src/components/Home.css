@@ -1,0 +1,44 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://i.imgur.com/I3qa9L9.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name-title {
+    color: #fff;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.name-title span {
+    color: #9b2c2c;
+    font-weight: 900;
+}
+
+.typeWrite{
+    color: #9c9c9c;
+    font-size: 1.5rem; 
+    line-height: 2.25rem; 
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

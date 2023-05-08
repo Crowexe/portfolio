@@ -1,0 +1,42 @@
+ul {
+    list-style-type: none;
+}
+
+.navbar-conteiner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 600;
+    z-index: 500;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 1rem; /* Esta propiedad equivale a space-x en Tailwind */
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar-list li{
+    display: inline;
+    float: right;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.navbar-list a{
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+}
+
+.navbar-list a:hover{
+    color: #ff6363 !important;
+    text-decoration: underline;
+}
