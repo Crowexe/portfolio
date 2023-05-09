@@ -1,10 +1,10 @@
 import React from 'react';
 import Typewriter from "typewriter-effect";
 import background from "/BG-edit.png";
+import Wave from './Wave';
 import './Home.css'
 
 const Home = () => {
-
 
     return (
         <>
@@ -21,6 +21,10 @@ const Home = () => {
                     }}
                 />
                 </span>
+                
+            </div>
+            <div className="home-wave">
+                <Wave />
             </div>
         </>
     );

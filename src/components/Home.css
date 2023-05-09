@@ -42,3 +42,9 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+.home-wave {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
