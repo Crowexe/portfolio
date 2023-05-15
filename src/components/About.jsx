@@ -7,7 +7,7 @@ const About = () => {
         <div className="conteiner">            
             <div >
                 <h1 className="titule">ABOUT ME</h1>
-                <p className="content">Hi, I&apos;m Luis Venegas a mexican computational sistems engineer,web Designer and Front-end Developer, focused on creating clean, responsive web designs!</p>
+                <p className="content">Hi, I&apos;m Luis Venegas a mexican computer systems engineer,web Designer and Front-end Developer, focused on creating clean, responsive web designs!</p>
 
                 <div className='skills'>
                     <div className="text-slate-100">
