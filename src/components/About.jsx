@@ -1,14 +1,14 @@
-import React from 'react'
+import './About.css'
 
 const About = () => {
   return (
     <>
-        <div className="p-60 flex items-center justify-center flex-col text-slate-100">
-            <div className="m-10">
-                <h1 className="text-slate-100">ABOUT ME</h1>
-                <p className="text-slate-100">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
+        <div className="conteiner">
+            <div >
+                <h1 className="titule">ABOUT ME</h1>
+                <p className="content">Hi, I&apos;m Luis Venegas a mexican computational sistems engineer,web Designer and Front-end Developer, focused on creating clean, responsive web designs!</p>
 
-                <div>
+                <div className='skills'>
                     <div className="text-slate-100">
                         <div className="skillbar-title bg-red-500"><span>HTML5</span></div>
                         <div className="skillbar-bar bg-red-500"></div>
