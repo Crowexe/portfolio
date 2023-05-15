@@ -3,7 +3,8 @@ import './About.css'
 const About = () => {
   return (
     <>
-        <div className="conteiner">
+        <img className="about-wave" src="/wave-usd.png" alt="wave"/>
+        <div className="conteiner">            
             <div >
                 <h1 className="titule">ABOUT ME</h1>
                 <p className="content">Hi, I&apos;m Luis Venegas a mexican computational sistems engineer,web Designer and Front-end Developer, focused on creating clean, responsive web designs!</p>
