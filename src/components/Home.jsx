@@ -20,7 +20,6 @@ const Home = () => {
                 />
                 </span>
             </div>
-            <img className="home-wave" src="/wave.png" alt="wave"/>
         </>                
     );
 };
