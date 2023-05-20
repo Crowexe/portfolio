@@ -37,7 +37,7 @@ function App() {
                     factor={3}
                     style={{
                         height: '100vh',
-                        backgroundImage: "url('/public/BG-edit.png')",
+                        backgroundImage: "url('https://i.imgur.com/nU5yj0X.png')",
                         backgroundSize: 'cover',
                         display: 'flex',
                         alignItems: 'center',
