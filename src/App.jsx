@@ -3,6 +3,8 @@ import './App.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Home from './components/Home';
 import About from './components/About';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 
 
 const url = (name, wrap = false) =>
@@ -15,20 +17,18 @@ function App() {
 
     return (
         <>
+            <Navbar />
             <div style={{ width: '100%', height: '100%', background: '#253237' }}>
                 <Parallax ref={parallax} pages={4}>
                 
 
                     <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} >
-                        <img src={'/wave.png'} style={{ position: 'absolute', bottom: '0', width: '100%', marginBottom:'-18rem'}} />
                     </ParallaxLayer>
                     
                     <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} >
-                        <img src={'/wave.png'} style={{ position: 'absolute', bottom: '0', width: '100%', marginBottom:'-18rem'}} />
                     </ParallaxLayer>
 
                     <ParallaxLayer offset={4} speed={1} style={{ backgroundColor: '#805E73' }} >
-                        <img src={'/wave.png'} style={{ position: 'absolute', bottom: '0', width: '100%', marginBottom:'-18rem'}} />
                     </ParallaxLayer>
 
                     <ParallaxLayer
@@ -45,7 +45,7 @@ function App() {
                         flexDirection: 'column'
                     }}
                     >
-                        <img src={'/wave.png'} style={{ position: 'absolute', bottom: '0', width: '100%', marginBottom:'-18rem'}} />
+                        {/*<img src={'/wave.png'} style={{ position: 'absolute', bottom: '0', width: '100%', marginBottom:'-18rem'}} />*/}
                     </ParallaxLayer>
 
                     <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
@@ -100,11 +100,6 @@ function App() {
                     <ParallaxLayer
                     offset={2}
                     speed={-0.3}
-                    style={{
-                        backgroundSize: '80%',
-                        backgroundPosition: 'center',
-                        backgroundImage: url('clients', true),
-                    }}
                     />
 
                     <ParallaxLayer
@@ -140,7 +135,9 @@ function App() {
                         justifyContent: 'center',
                     }}
                     onClick={() => parallax.current.scrollTo(3)}>
-                    <img src={url('clients-main')} style={{ width: '40%' }} />
+                    
+                        <Projects/>
+
                     </ParallaxLayer>
 
                     <ParallaxLayer

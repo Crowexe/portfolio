@@ -7,6 +7,7 @@ ul {
     top: 0;
     right: 0;
     margin: 0 auto;
+    margin-right: 2rem;
     z-index: 600;
     z-index: 500;
 }
@@ -49,8 +50,8 @@ ul {
 .navbar-list{
     display: flex;
     gap: 1rem; /* Esta propiedad equivale a space-x en Tailwind */
-    margin-top: 15px;
-    margin-right: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
     padding: 5px;
     text-align: center;
 }
@@ -64,73 +65,29 @@ ul {
 
 .navbar-list a{
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-decoration: none;
+    animation: fadeIn 1s ease-in-out;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .navbar-list a:hover{
     color: #ff6363 !important;
+    font-size: 2rem;
     text-decoration: underline;
 }
 
-.hamburguesa {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 600;
-    z-index: 500;
-    display: block;
-    width: 50px;
-    cursor: pointer;
-    margin: 10px;
-  }
-  
-  .hamburguesa span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #fff;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: all 0.25s ease-out;
-  }
-  
-  .hamburguesa span:nth-child(1) {
-    top: 0px;
-  }
-  
-  .hamburguesa span:nth-child(2),
-  .hamburguesa span:nth-child(3) {
-    top: 9px;
-  }
-  
-  .hamburguesa span:nth-child(4) {
-    top: 18px;
-  }
-  
-  .hamburguesa.abrir span:nth-child(1) {
-    top: 9px;
-    width: 0%;
-    left: 50%;
-  }
-  
-  .hamburguesa.abrir span:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  
-  .hamburguesa.abrir span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburguesa.abrir span:nth-child(4) {
-    top: 9px;
-    width: 0%;
-    left: 50%;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }

@@ -1,29 +1,17 @@
-import { useState } from 'react';
-import './Navbar.css'
+import './Navbar.css';
+
 
 const Navbar = () => {
-    
-    const [abrir, setAbrir] = useState(false);
-
-    const manejarClick = () => {
-      setAbrir(!abrir);
-    };
 
     return (
         <>   
-            <div className={`hamburguesa ${abrir ? "abrir" : ""}`} onClick={manejarClick}>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <nav className="navbar-conteiner">
                 
                 <ul className='navbar-list'>
-                    <li><a className='navbar-item' href="#Home">HOME</a></li>
-                    <li><a className='navbar-item' href="#">ABOUT</a></li>
-                    <li><a className='navbar-item' href="#">PORTFOLIO</a></li>
-                    <li><a className='navbar-item' href="#">CONTACT</a></li>
+                    <li><a className='navbar-item' href="https://www.linkedin.com/in/venevil/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"/></a></li>
+                    <li><a className='navbar-item' href="https://github.com/Crowexe" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"/></a></li>
+                    <li><a className='navbar-item' href="https://www.instagram.com/crow.exe_/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"/></a></li>
+                    <li><a className='navbar-item' href="https://www.twitch.tv/onicrow_" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-twitch"/></a></li>
                 </ul>
   
             </nav>

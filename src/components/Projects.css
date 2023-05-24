@@ -1,0 +1,13 @@
+.card {
+    background-image: url('/proyectos/to-do-list.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
