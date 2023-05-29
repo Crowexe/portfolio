@@ -5,9 +5,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .carousel-image {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+.carousel-image {
     width: 80%;
     height: 80%;
     background-size: cover;
@@ -20,17 +22,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  
-  .carousel-text {    
+}
+
+.carousel-text {    
     color: #fff;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     
-  }
+}
 
-  .carousel-link {
+.carousel-link {
     font-size: 20px;
     text-decoration: none;
     margin: 1rem;
@@ -40,10 +42,10 @@
     padding: 10px;
     transition: 0.3s ease-in-out;
     box-shadow: 20px 20px 4px -8px rgba(0,0,0,0.1);
-  }
-  
-  .prev-button,
-  .next-button {
+}
+
+.prev-button,
+.next-button {
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
@@ -53,5 +55,4 @@
     outline: none;
     transition: 0.3s ease;
     animation: fadeIn 1s ease-in-out;
-  }
-  
+}
