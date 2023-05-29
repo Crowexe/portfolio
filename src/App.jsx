@@ -14,7 +14,7 @@ function App() {
             <Parallax pages={3} >
                 <ParallaxLayer 
                     offset={0} 
-                    speed={0.7}
+                    speed={0.5}
                     style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -30,7 +30,7 @@ function App() {
                 
                 <ParallaxLayer
                     offset={1} 
-                    speed={0.7}
+                    speed={0.5}
                     style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -41,7 +41,7 @@ function App() {
 
                 <ParallaxLayer
                     offset={2} 
-                    speed={0.7}
+                    speed={0.5}
                     style={{
                         display: 'flex',
                         alignItems: 'center',
