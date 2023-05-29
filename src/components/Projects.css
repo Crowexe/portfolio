@@ -1,13 +1,57 @@
-.card {
-    background-image: url('/proyectos/to-do-list.png');
-    
-    background-size: contain;
-    background-repeat: no-repeat;
+.carousel-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .carousel-image {
+    width: 80%;
+    height: 80%;
+    background-size: cover;
     background-position: center;
-    height: 100vh;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 20px 20px 4px -8px rgba(0,0,0,0.1);
+    margin: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
-}
+  }
+  
+  .carousel-text {    
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+
+  .carousel-link {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 1rem;
+    color: #fff;
+    background-color: #eb39425b;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 20px 20px 4px -8px rgba(0,0,0,0.1);
+  }
+  
+  .prev-button,
+  .next-button {
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  

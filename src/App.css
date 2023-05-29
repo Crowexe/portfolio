@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
+}
+
+.imagen {
+    width: 100%;
+    background-position: center;
 }
